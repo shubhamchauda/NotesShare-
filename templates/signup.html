@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+
+
+		<title>Sign Up</title>
+		<script type="text/javascript">
+			var disable = function(){
+				document.getElementById('submit').disabled = true;
+			}
+			var check = function() {
+				if (document.getElementById('password').value !=
+				document.getElementById('confirm_password').value)
+				{
+					alert("Make sure Password and Confirm Password are the same")
+					document.getElementById('submit').disabled = true;
+				}
+				else
+				{
+					document.getElementById('submit').disabled = false;
+				}
+			}
+		</script>
+
+	</head>
+	<body class="grey">
+		<style>
+			body{
+
+					background-size: cover;
+					width: 40%;
+					height: 90%;
+					margin-left:auto;
+					margin-right: auto;
+
+					margin-top: 1%;
+			    }
+		</style>
+		<div class="card" id="1"  style="box-Shadow:10px 10px 10px;">
+
+			<div class=" row">
+
+	  			<form method="POST" >
+	  				<div class="row">
+	  					<br>
+	  					<div  align="Center">
+
+				<h4 styleclass = "header center" style="color:teal accent-4">Signup</h4>
+			</div>
+        			<div class="input-field col s10 offset-s1">
+          				<input name="name" type="text" class="validate" id = "name" required>
+		  				<label for = "name">Name</label>
+						<span class = "helper-text" data-error = "Enter Name"></span>
+        			</div>
+
+			  	</div>
+	  			<div class="row">
+					<div class="input-field col s10 offset-s1">
+						<input name="email" type="email" class="validate" id = "email" required>
+						<label for = "email">E-Mail</label>
+						<span class = "helper-text" data-error = "Enter Email Address"></span>
+					</div>
+	  			</div>
+				<div class="row">
+					<div class="input-field col s10 offset-s1">
+						<input name = "dept" type="text" class="validate" id = "dept" required>
+						<label for = "dept">Department</label>
+						<span class = "helper-text" data-error = "Enter department"></span>
+					</div>
+	  			</div>
+					<div class="row">
+						<div class="input-field col s10 offset-s1">
+							<input name = "enrollNo" type="text" class="validate" id = "enrollNo" required>
+							<label for = "enrollNo">Enrollment No.</label>
+							<span class = "helper-text" data-error = "Enter Enrollment No."></span>
+						</div>
+						</div>
+      			<div class="row">
+        			<div class="input-field col s10 offset-s1">
+          				<input name="password" type="password" id = "password" maxlength="20" minlength="8" class="validate" required>
+		  				<label for = "password">Password</label>
+						<span class = "helper-text" data-error = "Enter Password"></span>
+					</div>
+      			</div>
+	  			<div class="row">
+        			<div class="input-field col s10 offset-s1">
+          				<input name="cpassword" type="password" id = "confirm_password" maxlength="20" minlength="8" class="validate" onblur="check()" required>
+		  				<label for = "confirm_password">Confirm Password</label>
+					</div>
+      			</div>
+							<div class="col s4 offset-s1">
+			           		Already a user? <a href="/signin">Login</a>
+										<br><br><br>
+								</div>
+					<div class="col s4 offset-s2" onclick="check()">
+          				<button type="submit"style="font-family: Arial, Helvetica, sans-serif;  float : right;" class="btn right teal lighten-1" class = "btn waves-effect waves-red waves-ripple btn-small:hover" id = 'submit' name="signup"> Sign Up </button>
+          				<br><br>
+        			</div>
+					</div>
+
+
+
+
+	  			</form>
+					<div style = "color : red;">{{ error }}</div>
+	  		</div>
+	  	</div>
+			<!-- <div class = "card panel">
+	     <div class = "card-text">
+			  Made using <a href="https://materializecss.com/">Materialize</a>
+	     </div>
+	    </div> -->
+	</body>
+</html>

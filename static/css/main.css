@@ -1,0 +1,10 @@
+body {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4%;
+}
+
+.card-text {
+    padding: 4%
+}

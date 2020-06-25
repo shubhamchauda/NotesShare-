@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="home.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta charset="utf-8">
+        <title>SCSIT</title>
+        <style>
+            .block{
+                height: 300px;
+                width: 300px;
+                border-radius: 150px;
+                background-color: black;
+
+
+            }
+
+        </style>
+        <script type="text/javascript">
+    		document.addEventListener('DOMContentLoaded', function() {
+    		var elems = document.querySelectorAll('.dropdown-trigger');
+    		var instances = M.Dropdown.init(elems);
+    		});
+    		</script>
+
+
+
+
+
+
+    </head>
+
+    <body bgcolor="#eeeeee">
+
+        <nav>
+
+          <div class="nav-wrapper" style="background-color:teal">
+            <div class = "container">
+            <a href="/" class="brand-logo">Home</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                  <li><a href="/logout">logout</a></li>
+                </ul>
+              </div>
+         </div>
+       </nav>
+       <br>
+       <br>
+
+       <div class="container">
+       <h4>COURSES</h4>
+
+             <div class="row">
+       				<div class="card">
+               <div class="col s6">
+                 <div class="card-panel teal">
+                   <h4 class = "header center"><br>B.C.A (3 years)</h4>
+                  </div>
+       		             <a class='dropdown-trigger btn' href='#' data-target='dropdown1' onclick="instance.open();">SELECT SEM</a>
+
+
+       							   <ul id='dropdown1' class='dropdown-content'>
+       								<li><a href="scsit/bca/1">sem 1</a></li>
+       								<li><a href="scsit/bca/2">sem 2</a></li>
+       							    <li><a href="scsit/bca/3">sem 3</a></li>
+                                    <li><a href="scsit/bca/4">sem 4</a></li>
+                                    <li><a href="scsit/bca/5">sem 5</a></li>
+                                    <li><a href="scsit/bca/6">sem 6</a></li>
+
+       	                       	</ul>
+             </div>
+       	 <div class="col s6">
+       		 <div class="card-panel teal">
+       			 <h4 class = "header center"><br>M.C.A (3 Years)</h4>
+       		    </div>
+       	       	<a class='dropdown-trigger btn' href='#' data-target='dropdown2' onclick="instance.open();">SELECT SEM</a>
+
+
+                  <ul id='dropdown2' class='dropdown-content'>
+               		<li><a href="scsit/mca/1">sem 1</a></li>
+               	  <li><a href="scsit/mca/2">sem 2</a></li>
+               	  <li><a href="scsit/mca/3">sem 3</a></li>
+               	  <li><a href="scsit/mca/4">sem 4</a></li>
+                  <li><a href="scsit/mca/5">sem 5</a></li>
+                  <li><a href="scsit/mca/6">sem 6</a></li>
+
+       	        </ul>
+       	</div>
+        </div>
+       </div>
+
+                    <div class="row">
+              				<div class="card">
+                      <div class="col s6">
+                        <div class="card-panel teal">
+                          <h4 class = "header center"><br>M.tech(2 Years)</h4>
+                         </div>
+              		             <a class='dropdown-trigger btn' href='#' data-target='dropdown3' onclick="instance.open();">SELECT SEM</a>
+
+
+              							   <ul id='dropdown3' class='dropdown-content'>
+              								<li><a href="scsit/mtech/1">sem 1</a></li>
+              								<li><a href="scsit/mtech/2">sem 2</a></li>
+                  							 <li><a href="scsit/mtech/3">sem 3</a></li>
+                  							 <li><a href="scsit/mtech/4">sem 4</a></li>
+
+
+              	         	</ul>
+                    </div>
+              	 <div class="col s6">
+              		 <div class="card-panel teal"><br><br>
+              			 <h4 align="center">PGDCA</h4>
+              		    </div>
+              	       	<a class='dropdown-trigger btn' href='#' data-target='dropdown4' onclick="instance.open();">SELECT SEM</a>
+
+
+                         <ul id='dropdown4' class='dropdown-content'>
+                      		<li><a href="scsit/pgdca/1">sem 1</a></li>
+                      	   <li><a href="scsit/pgdca/2">sem 2</a></li>
+
+
+
+              	        </ul>
+              	</div>
+               </div>
+              </div>
+
+
+     </div>
+
+
+    </body>
+</html>

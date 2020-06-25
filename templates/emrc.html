@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="home.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta charset="utf-8">
+        <title>EMRC</title>
+        <style>
+            .block{
+                height: 300px;
+                width: 300px;
+                border-radius: 150px;
+                background-color: black;
+
+
+            }
+
+        </style>
+        <script type="text/javascript">
+    		document.addEventListener('DOMContentLoaded', function() {
+    		var elems = document.querySelectorAll('.dropdown-trigger');
+    		var instances = M.Dropdown.init(elems);
+    		});
+    		</script>
+
+
+
+
+
+
+    </head>
+
+    <body bgcolor="#eeeeee">
+
+        <nav>
+
+          <div class="nav-wrapper" style="background-color:teal">
+            <div class = "container">
+            <a href="/" class="brand-logo">Home</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                  <li><a href="/logout">logout</a></li>
+                </ul>
+              </div>
+         </div>
+       </nav>
+       <br>
+       <br>
+
+       <div class="container">
+       <h4>COURSES</h4>
+
+             <div class="row">
+       				<div class="card">
+               <div class="col s6">
+                 <div class="card-panel teal">
+                   <h4 class = "header center"><br>M.SC (5 Years)</h4><br>
+                  </div>
+       		             <a class='dropdown-trigger btn' href='#' data-target='dropdown1' onclick="instance.open();">SELECT SEM</a>
+
+
+       							   <ul id='dropdown1' class='dropdown-content'>
+       								<li><a href="emrc/msc/1">sem 1</a></li>
+       								<li><a href="emrc/msc/2">sem 2</a></li>
+       							 <li><a href="emrc/msc/3">sem 3</a></li>
+       							 <li><a href="emrc/msc/4">sem 4</a></li>
+       							 <li><a href="emrc/msc/5">sem 5</a></li>
+       							 <li><a href="emrc/msc/6">sem 6</a></li>
+       							 <li><a href="emrc/msc/7">sem 7</a></li>
+       							 <li><a href="emrc/msc/8">sem 8</a></li>
+                                 <li><a href="emrc/msc/9">sem 9</a></li>
+       							 <li><a href="emrc/msc/10">sem 10</a></li>
+
+
+
+       	         	</ul>
+             </div>
+       	 <div class="col s6">
+       		 <div class="card-panel teal">
+       			 <h4 class = "header center">M.B.A(Media Management)</h4><br> <br> <br>
+       		    </div>
+       	       	<a class='dropdown-trigger btn' href='#' data-target='dropdown2' onclick="instance.open();">SELECT SEM</a>
+
+
+                  <ul id='dropdown2' class='dropdown-content'>
+               		<li><a href="emrc/mba/1">sem 1</a></li>
+               	  <li><a href="emrc/mba/2">sem 2</a></li>
+               	  <li><a href="emrc/mba/3">sem 3</a></li>
+               		<li><a href="emrc/mba/4">sem 4</a></li>
+
+
+       	        </ul>
+       	</div>
+        </div>
+       </div>
+
+
+              	</div>
+
+
+
+    </body>
+</html>

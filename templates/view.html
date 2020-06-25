@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Compiled and minified CSS -->
+        <meta charset="utf-8">
+				<link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+
+        <title>View</title>
+
+    </head>
+
+    <body bgcolor="#eeeeee">
+
+      <nav>
+
+        <div class="nav-wrapper" style="background-color:teal">
+          <div class = "container">
+          <a href="/" class="brand-logo">Home</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                <li><a href="/logout">logout</a></li>
+              </ul>
+            </div>
+       </div>
+     </nav>
+       <br>
+       <br>
+       <div class = "container">
+       <form class="abc" method="POST">
+         {% for key, value in returnDict.items() %}
+			   <div class="row">
+			       <div class="col s3  teal center" style = "color:white; padding: 5px"><span class="flow-text">{{key}}</span></div>
+						 <div class="col s1 "></div>
+			       <div class="col s6  teal" style = "color:white; padding: 5px; padding-left:20px"><span class="flow-text">{{value}}</span></div>
+           </div>
+           <div class = "row">
+             <div class="col s1 offset s10">
+               <button type="submit"style="font-family: Arial, Helvetica, sans-serif;  float : right;" class="btn right teal lighten-1" class = "btn waves-effect waves-red waves-ripple btn-small:hover" id = 'submit' name="download" value = "{{value}}"> Download</button>
+             </div>
+
+			    </div>
+          {% endfor %}
+        </form>
+      </div>
+			</body>
+		</html>

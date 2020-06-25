@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+
+		<title>Login</title>
+
+	</head>
+	<body class = "grey" >
+    <style>
+      body{
+           padding-top :90px;
+          background-size: cover;
+          width: 40%;
+          height: 90%;
+          margin-left:auto;
+          margin-right: auto;
+
+          margin-top: 1%;
+
+      }
+      .card
+      {
+        border-radius:25px:
+      }
+      #heading
+      {
+        padding- top:10px;
+
+      }
+
+    </style>
+
+<div class = "card" id="1"  style="box-Shadow:10px 10px 10px;">
+  <div class="row">
+    <form action="" method="post">
+
+        <div class="row" align="center">
+          <div  align="Center">
+
+        <h4 class = "header center"><br>LOGIN</h4>
+
+      </div>
+        <div class="input-field col s10 offset-s1" style="padding-left:10px;">
+             <input type="text" class="validate" name="enrollNo" id = "enrollNo">
+                 <label for="enrollNo">Enrollment Number</label>
+						   	<span class = "helper-text" data-error = "Enter Enrollment Number"></span>
+        </div>
+         </div>
+           <div class="row">
+             <div class="input-field col s10 offset-s1">
+               <input id="password" type="password" class="validate" name="password">
+               <label for="password">Password</label>
+						     <span class = "helper-text" data-error = "Enter Password"></span>
+        </div>
+      </div>
+       <div class="col s4 offset-s1">
+          		New here? <a href="/signup">Signup</a>
+              <br> <br>
+              <br>
+       </div>
+			 <div class="col s4 offset-s2">
+						 <button type="submit" style="margin-left:50px; font-family: Arial, Helvetica, sans-serif;" class="btn teal lighten-1 right "class = "btn waves-effect waves-light btn-small" id = 'submit' name="login"> Login </button>
+							<br> <br>
+							<br>
+			 </div>
+
+
+    </form>
+		<div style = "color : red;">{{ error }}</div>
+ </div>
+ <!-- <div class = "card panel">
+ 	 <div class = "card-text">
+ 			 Made using <a href="https://materializecss.com/">Materialize</a>
+ 	 </div>
+ </div> -->
+
+
+</div>
+
+</body>
+</html>

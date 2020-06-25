@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="home.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <style>
+            .block{
+                height: 300px;
+                width: 300px;
+                border-radius: 150px;
+                background-color: black;
+
+
+            }
+
+        </style>
+
+
+
+
+
+    </head>
+
+    <body bgcolor="#eeeeee">
+
+        <nav>
+
+          <div class="nav-wrapper" style="background-color:teal">
+            <div class = "container">
+            <a href="/" class="brand-logo">Home</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                  <li><a href="/logout">logout</a></li>
+                </ul>
+              </div>
+         </div>
+       </nav>
+       <br>
+
+       <div class="container">
+         <div class="row">
+              <div class="col s6 m3" >
+                <a href ="/dept/iips">  <div class="card" style="border:solid;" >
+                  <div class="card-image">
+                  <img src="{{url_for('static',filename = 'iips_logo2.png')}}" >
+              </div>
+           <div class="card-content" style="border-top-style:solid;border-color:black;">
+               <p>IIPS</p>
+           </div></a>
+                </div>
+                </div>
+
+            <div class="col m1">
+
+            </div>
+
+                <div class="col s6 m3">
+                     <a href ="/dept/iet">  <div class="card" style="border:solid; border-color:black;">
+                       <div class="card-image">
+                       <img src="{{url_for('static',filename = 'iet.png')}}">
+                   </div>
+                <div class="card-content" style="border-top-style:solid; border-color:black;">
+                    <p>IET</p>
+                </div></a>
+                     </div>
+                     </div>
+
+                     <div class="col m1">
+
+                     </div>
+
+                     <div class="col s6 m3">
+                       <a href ="/dept/scsit">  <div class="card"style="border:solid;">
+                         <div class="card-image">
+                         <img src="{{url_for('static',filename = 'scsits.png')}}">
+                     </div>
+                  <div class="card-content" style="border-top-style:solid;border-color:black;">
+                      <p>SCITS</p>
+                  </div></a>
+                       </div>
+                       </div>
+
+             </div>
+
+             <!--row2-->
+
+
+            <div class="row">
+              <div class="col s6 m3">
+                <a href ="/dept/ims">  <div class="card"style="border:solid;">
+                  <div class="card-image">
+                  <img src="{{url_for('static',filename = 'ims.jpg')}}">
+              </div>
+           <div class="card-content" style="border-top-style:solid; border-color:black;">
+               <p>IMS</p>
+           </div></a>
+                </div>
+                </div>
+
+          <div class="col m1">
+
+          </div>
+
+                <div class="col s6 m3">
+                  <a href ="/dept/emrc">  <div class="card"style="border-style:solid;" >
+                    <div class="card-image">
+                    <img src="{{url_for('static',filename = 'download.jpg')}}">
+                </div>
+             <div class="card-content" style="border-top-style:solid;border-color:black;">
+                 <p>EMRC</p>
+             </div></a>
+                  </div>
+                  </div>
+
+                  <div class="col m1">
+
+                  </div>
+
+                  <div class="col s6 m3">
+                    <a href ="/dept/sjmc">  <div class="card" style="border-style:solid;">
+                      <div class="card-image">
+                      <img src="{{url_for('static',filename = 'sjmc.png')}}">
+                  </div>
+               <div class="card-content" style="border-top-style:solid;border-color:black">
+                   <p>SJMC</p>
+               </div></a>
+                    </div>
+                    </div>
+
+          </div>
+          </div>
+
+    </body>
+</html>
